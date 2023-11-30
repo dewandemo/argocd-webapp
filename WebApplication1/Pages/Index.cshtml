@@ -5,6 +5,14 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome to this demo</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <button id="harnessButton" style="background-color: #0092E4; color: white;">Harness</button>
+    <p id="displayText" style="display: none;">The Modern Software Delivery Platform®</p>
 </div>
+
+@section Scripts {
+    <script>
+        document.getElementById("harnessButton").addEventListener("click", function() {
+            document.getElementById("displayText").style.display = "block";
+        });
+    </script>
+}
